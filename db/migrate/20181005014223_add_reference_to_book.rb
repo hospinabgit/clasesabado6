@@ -1,0 +1,6 @@
+class AddReferenceToBook < ActiveRecord::Migration[5.2]
+  def change
+    add_reference :books, :author, foreign_key: true #comando nombre tabla  y tipo atributo
+
+  end
+end
